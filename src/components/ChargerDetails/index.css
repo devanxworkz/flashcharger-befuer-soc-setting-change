@@ -1,0 +1,455 @@
+/* ===== Screen ===== */
+.cd-screen {
+   min-height: 100vh;
+  padding: 18px 18px 24px;
+  background:
+    radial-gradient(circle at top, #2a1a05, #000 55%);
+  color: #fff;
+  font-family: "Inter", system-ui, sans-serif;
+  max-width: 430px;
+  margin: auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .cd-screen {
+    padding: 32px;
+  }
+}
+
+/* ===== Header ===== */
+.cd-header {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cd-headers {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.cd-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cd-icon {
+  background: #141414;
+  border: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ===== Card ===== */
+.cd-card {
+  width: 100%;
+  max-width: 420px;
+  background: #c71212;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+}
+
+/* ===== Image ===== */
+.cd-image {
+  height: 290px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.cd-availability {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(0, 255, 120, 0.15);
+  color: #19ff7a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #19ff7a;
+  border-radius: 50%;
+}
+
+/* ===== Body ===== */
+.cd-body {
+  padding: 10px;
+}
+
+.cd-tag {
+  font-size: 11px;
+  color: #ff8c00;
+  letter-spacing: 1px;
+}
+
+.cd-name {
+  font-size: 22px;
+  margin: 6px 0;
+}
+
+.cd-id {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* ===== Specs ===== */
+.cd-specs {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.cd-spec {
+  flex: 1;
+  background: #141414;
+  border-radius: 22px;
+  padding: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background: #1c1206;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cd-spec small {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.cd-spec strong {
+  font-size: 15px;
+}
+
+/* ===== Billing ===== */
+.cd-section-title {
+  font-size: 12px;
+  color: #0a0a0a;
+  margin-bottom: 8px;
+}
+
+.cd-row {
+  background: #141414;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.row-left {
+  display: flex;
+  gap: 10px;
+}
+
+.row-icon {
+  font-size: 18px;
+}
+
+.price {
+  color: #ff8c00;
+}
+
+.success {
+  color: #2cff9e;
+}
+
+/* ===== Location ===== */
+.cd-location {
+  background: #1c1206;
+  color: #ffb347;
+  padding: 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  margin: 14px 0;
+}
+
+/* ===== CTA ===== */
+.cd-cta {
+  width: 100%;
+  padding: 16px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff8c00, #ff6a00);
+  color: #000;
+  cursor: pointer;
+}
+
+/* Container */
+.cd-specs {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+/* Card */
+.cd-spec {
+  flex: 1;
+  background: linear-gradient(180deg, #1a1a1a, #0f0f0f);
+  border-radius: 22px;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 153, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon base */
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Lightning icon */
+.icon.lightning {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9900' viewBox='0 0 24 24'%3E%3Cpath d='M13 2L3 14h7l-1 8 10-12h-7l1-8z'/%3E%3C/svg%3E");
+}
+
+/* Plug icon */
+.icon.plug {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9900' viewBox='0 0 24 24'%3E%3Cpath d='M7 2v6H5v4a5 5 0 005 5v5h4v-5a5 5 0 005-5V8h-2V2h-2v6H9V2H7z'/%3E%3C/svg%3E");
+}
+
+/* Text */
+.spec-text small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #9a9a9a;
+  margin-bottom: 4px;
+}
+
+.spec-text strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .spec-text strong {
+    font-size: 18px;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cd-spec {
+    padding: 20px;
+  }
+
+  .spec-text strong {
+    font-size: 22px;
+  }
+}
+
+
+/* Section title */
+.cd-section-title {
+  color: #8a8a8a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  
+}
+
+/* Billing card */
+.cd-card {
+  background: transparent;
+  border-radius: 0px;
+  /* padding: 14px 16px; */
+  box-shadow: inset 0 0 0 0px rgba(255,255,255,0.05);
+}
+
+/* Rows */
+.cd-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 14px 0;
+}
+
+/* Left side */
+.row-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icon circles */
+.row-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Billing icon */
+.row-icon.billing {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M2 6h20v12H2zM4 8v8h16V8zM6 10h6v2H6z'/%3E%3C/svg%3E");
+}
+
+/* Check icon */
+.row-icon.check {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4z'/%3E%3C/svg%3E");
+}
+
+/* Text */
+.cd-row strong {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.cd-row p {
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.price small {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* Success tick */
+.success {
+  color: #00e676;
+  font-size: 20px;
+}
+
+/* Location pill */
+.cd-location {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 20px;
+  background: radial-gradient(circle at left, rgba(255,140,0,0.25), #121212);
+  color: #cfcfcf;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.location-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff8c00' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+
+/* CTA */
+.cd-cta {
+  margin-top: 18px;
+  width: 100%;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  background: #ff8c00;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 0 7px rgba(255,140,0,0.6);
+  cursor: pointer;
+}
+
+/* CTA icon */
+.cta-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 24 24'%3E%3Cpath d='M13 2L3 14h7l-1 8 10-12h-7l1-8z'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+
+.overlaySub {
+  font-size: 16px;
+  font-weight: 600; /* 🔥 increase thickness */
+  color: #ffffff;
+}
+
+.overlaySubHighlight {
+  font-size: 18px;
+  font-weight: 700; /* 🔥 bold */
+  color: #22c55e;   /* 🔥 highlight color (green) */
+}
+
+.overlaySubHighlight {
+  font-size: 18px;
+  font-weight: 700;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+}

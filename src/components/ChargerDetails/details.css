@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+/* APP BACKGROUND */
+.pref-containersss {
+  max-width: 420px;
+  margin: auto;
+  height: 1088px;
+  /* min-height: 100vh; */
+  padding: 24px 18px 40px;
+  background: linear-gradient(180deg, #0a0a09 0%, #000000 100%);
+   
+  color: #fff;
+}
+
+.phone-frame{
+aspect-ratio:9/19.5;
+}
+
+body{
+margin:0;
+/* overflow-x:hidden; */
+background:#111;
+}
+
+.app-wrapper{
+background:#111;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+.phone-frame{
+width:390px;
+height:850px;
+background:#37322a;
+border-radius:28px;
+/* overflow:hidden; */
+box-shadow:0 30px 80px rgba(0,0,0,0.8);
+border:1px solid rgba(255,255,255,0.06);
+position:relative;   /* IMPORTANT */
+}
+
+
+/* MOBILE SCREEN */
+
+.screen{
+height:100%;
+overflow-y:auto;
+overflow-x:hidden;
+/* padding-bottom:120px; */
+}
+
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+background:#0a0a0a;
+font-family: "Kanit", sans-serif;
+color:white;
+}
+
+/* SCREEN */
+
+.screen{
+max-width:420px;
+margin:auto;
+min-height:100vh;
+/* padding-bottom:120px; */
+}
+
+/* HEADER */
+
+.topbarsss{
+padding:16px;
+backdrop-filter:blur(10px);
+margin-bottom: 15px;
+}
+
+.title{
+font-size:18px;
+font-weight:700;
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* .circleBtn{
+width:40px;
+height:40px;
+border-radius:50%;
+background:rgba(255,255,255,0.06);
+border:none;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+cursor:pointer;
+} */
+
+/* HERO CARD */
+
+.heroCard{
+background:#1a1a1a;
+border-radius:50px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.heroImage{
+height:290px;
+background-size:cover;
+background-position:center;
+position:relative;
+
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+height:120px;
+background:linear-gradient(to top,#1a1a1a,transparent);
+}
+
+.badge{
+position:absolute;
+top:18px;
+right:18px;
+display:flex;
+align-items:center;
+gap:8px;
+padding:8px 16px;
+border-radius:50px;
+background:rgba(0,255,136,0.2);
+border:1px solid rgba(0,255,136,0.4);
+color:#00ff88;
+font-size:12px;
+font-weight:500;
+letter-spacing:1px;
+}
+
+.pulse{
+width:8px;
+height:8px;
+border-radius:50%;
+background:#00ff88;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{opacity:1}
+50%{opacity:0.3}
+100%{opacity:1}
+}
+
+/* STATION INFO */
+
+.stationInfo{
+padding:25px;
+margin-top:-00px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.nodeTag{
+color:#f27f0d;
+font-size:12px;
+letter-spacing:2px;
+font-weight:600;
+}
+
+.stationName{
+font-size:27px;
+font-weight:700;
+margin-top:6px;
+text-align: start;
+}
+
+.stationId{
+color:#888;
+margin-top:10px;
+font-size: 12px;
+}
+
+/* SPEC GRID */
+
+.specGrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+margin-top:20px;
+}
+
+.specCard{
+background:#1a1a1a;
+border-radius:45px;
+padding:20px;
+display:flex;
+flex-direction: column;
+justify-content: start;
+gap:14px;
+/* align-items:center; */
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.specIcon{
+width:40px;
+height:40px;
+border-radius:20px;
+background:rgba(242,127,13,0.15);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#f27f0d;
+}
+
+.specLabel{
+font-size:11px;
+color:#888;
+padding-bottom: 5px;
+}
+
+.specValue{
+font-size:20px;
+font-weight:700;
+}
+
+/* BILLING */
+
+.sectionTitle{
+margin-top:28px;
+font-size:12px;
+letter-spacing:2px;
+margin-left: 5px;
+color:#777;
+font-family: "Kanit", sans-serif;
+}
+
+.billingCard{
+margin-top:10px;
+background:#1a1a1a;
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.05);
+overflow:hidden;
+}
+
+.billingRow{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.billingRow:last-child{
+border-bottom:none;
+}
+
+.billingLeft{
+display:flex;
+gap:14px;
+align-items:center;
+}
+
+.billingIcon{
+width:44px;
+height:44px;
+border-radius:12px;
+background:rgba(255,255,255,0.05);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.billingTitle{
+font-weight:550;
+}
+
+.billingSub{
+font-size:13px;
+color:#888;
+}
+
+.billingPrice{
+font-size:20px;
+font-weight:700;
+}
+
+.billingPrice span{
+font-size:14px;
+color:#888;
+margin-left:4px;
+}
+
+.successIcon{
+color:#00ff88;
+}
+
+/* LOCATION */
+
+.locationNote{
+margin-top:20px;
+padding:16px;
+border-radius:20px;
+background:rgba(242,127,13,0.08);
+border:1px solid rgba(242,127,13,0.15);
+display:flex;
+gap:10px;
+font-size:14px;
+color:#ddd;
+}
+
+.locationIcon{
+color:#f27f0d;
+}
+
+/* CTA */
+
+/* .bottomCTA{ */
+/* position:absolute; */
+/* bottom:0;/ */
+/* left:0; */
+/* width:100%; */
+/* padding:20px; */
+/* background:linear-gradient(to top,#0a0a0a,#0a0a0a00); */
+/* box-sizing:border-box; */
+/* } */
+
+.ctaButton{
+width:100%;
+height:64px;
+border-radius:50px;
+background:#f27f0d;
+border:none;
+color:#131212;
+font-size:18px;
+font-weight:700;
+display:flex;
+align-items:center;
+flex-direction: row;
+justify-content:center;
+margin-top: 22px;
+
+gap:10px;
+/* box-shadow:0 3px 10px 0 rgba(242,127,13,0.4); */
+cursor:pointer;
+}
+
+.ctaButton:hover{
+transform:translateY(-1px);
+box-shadow:0 6px 16px rgba(242,127,13,0.5);
+}
+
+.ev-btn{
+width:100%;
+height:60px;
+border-radius:40px;
+border:none;
+font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+margin-top: 20px;
+font-weight:600;
+background:#f27f0d;
+color:rgb(10, 10, 10);
+box-shadow:0 3px 10px rgba(242,127,13,0.4);
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+
+  backdrop-filter: blur(2px);
+  background: rgba(0,0,0,0.2);
+
+  z-index: 9999;
+}
+
+.overlayContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 320px;   /* 🔥 prevents stretching */
+  text-align: center;
+  color: white;
+}
+
+.overlayTitle {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.overlayTitleforcharging {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.loaderBig {
+  width: 60px;
+  height: 60px;
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #f97d02;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 16px 0;
+}
+
+.overlaySub {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 8px;
+  max-width: 240px;
+}
+
+/* BIG LOADER */
+.loaderBig,
+.successWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* BIG SUCCESS TICK */
+.successWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigTick {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #00c853;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pop 0.3s ease;
+}
+
+/* Animations */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* 🔥 HERO IMAGE OVERLAY (separate from loading overlay) */
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.1)
+  );
+  border-radius: inherit;
+}
+
+
+.errorCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ff4d4f;
+  color: white;
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.overlaySub {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.tickSvg {
+  width: 100px;
+  height: 100px;
+}
+
+/* Circle animation */
+.tickCircle {
+  stroke: #00c853;
+  stroke-width: 3;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  animation: drawCircle 0.6s ease forwards;
+}
+
+/* Tick animation */
+.tickPath {
+  stroke: #00c853;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+
+  animation: drawTick 0.4s ease forwards;
+  animation-delay: 0.5s; /* ⏱️ delay after circle */
+}
+
+/* Animations */
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawTick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.primaryText1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a7a69d;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}

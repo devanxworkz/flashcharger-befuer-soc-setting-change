@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+background:#120d08;
+font-family:"Kanit", sans-serif;
+}
+
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* SCREEN */
+
+.ev-screen{
+max-width:420px;
+margin:auto;
+min-height:100vh;
+color:white;
+padding:18px;
+display:flex;
+flex-direction:column;
+}
+
+
+.ev-screen {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+
+  background: #120d08;
+
+  display: flex;
+  flex-direction: column;
+
+  border-left: 1px solid rgba(255,255,255,0.05);
+  border-right: 1px solid rgba(255,255,255,0.05);
+
+  /* overflow-x: hidden; */
+}
+
+/* PREVENT SIDE SCROLL */
+/* html, body {
+  overflow-x: hidden;
+} */
+/* HEADER */
+
+.ev-header{
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+margin-bottom:10px;
+margin-top: 25px;
+}
+
+.ev-header h3{
+font-size:12px;
+letter-spacing:3px;
+color:#bbb;
+}
+
+.back-btn{
+position:absolute;
+left:0;
+background:#f27f0d20;
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#f27f0d;
+}
+
+.back-btn:hover{
+transform:translateY(-1px);
+box-shadow:0 6px 16px rgba(242,127,13,0.5);
+}
+
+/* PROGRESS */
+
+.ev-progress{
+display:flex;
+gap:6px;
+justify-content:center;
+margin-bottom:30px;
+}
+
+.ev-progress span{
+height:6px;
+width:10px;
+background:#333;
+border-radius:10px;
+}
+
+.ev-progress .done{
+background:#22c55e;
+width:20px;
+}
+
+.ev-progress .active{
+background:#f27f0d;
+width:30px;
+}
+
+/* CENTER ICON */
+
+.ev-center{
+display:flex;
+justify-content:center;
+margin:20px 0;
+}
+
+.ev-circle{
+position:relative;
+width:190px;
+height:190px;
+border-radius:50%;
+background:#1a1a1a;
+border:4px solid rgba(242,127,13,0.2);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 80px rgba(242,127,13,0.2);
+}
+
+.main-icon{
+font-size:80px;
+color:#f27f0d;
+}
+
+.sync-icon{
+position:absolute;
+right:-10px;
+bottom:-10px;
+background:#f27f0d;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+}
+
+/* TITLE */
+
+h1{
+text-align:center;
+font-size:28px;
+margin-top:10px;
+}
+
+.ev-sub{
+text-align:center;
+color:#aaa;
+font-size:14px;
+max-width:280px;
+margin:10px auto 30px;
+}
+
+/* STATUS CARDS */
+
+.ev-status-list{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.status-card{
+display:flex;
+align-items:center;
+gap:14px;
+padding:20px;
+border-radius:45px;
+background:#1a1a1a;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.status-icon{
+width:48px;
+height:48px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#222;
+}
+
+.status-icon span{
+font-size:26px;
+}
+
+.status-text strong{
+display:block;
+font-size:16px;
+font-weight: 500;
+}
+
+.status-text p{
+font-size:13px;
+color:#999;
+margin-top:4px;
+}
+
+.tick{
+margin-left:auto;
+color:#22c55e;
+}
+
+/* SUCCESS */
+
+.success .status-icon{
+background:#22c55e20;
+color:#22c55e;
+}
+
+/* DETECTING */
+
+.detecting{
+border:2px solid rgba(242,127,13,0.3);
+background:rgba(242,127,13,0.05);
+}
+
+.active-detect{
+box-shadow:inset 4px 0 0 #f27f0d;
+}
+
+.detecting .status-icon{
+background:#f27f0d20;
+color:#f27f0d;
+}
+
+/* LOADER */
+.loader{
+margin-left:auto;
+width:22px;
+height:22px;
+border:3px solid rgba(242,127,13,0.2);
+border-top-color:#f27f0d;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+to{
+transform:rotate(360deg);
+}
+}
+
+/* BUTTON */
+
+.ev-footer{
+margin-top:auto;
+}
+
+.ev-btn{
+width:100%;
+height:60px;
+border-radius:40px;
+border:none;
+background:#333;
+color:#101010;
+font-size:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+margin-top: 20px;
+font-weight:600;
+}
+
+.ev-btn.active{
+background:#f27f0d;
+color:rgb(10, 10, 10);
+box-shadow:0 3px 10px rgba(242,127,13,0.4);
+}
+
+.ev-note{
+text-align:center;
+font-size:11px;
+color:#777;
+margin-top:14px;
+letter-spacing:1px;
+}

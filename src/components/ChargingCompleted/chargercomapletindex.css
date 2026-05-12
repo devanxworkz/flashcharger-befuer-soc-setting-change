@@ -1,0 +1,160 @@
+/* 🌍 Wrapper */
+.completeWrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #000000, #0a0a0a);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px; /* 🔥 prevents edge touching on mobile */
+  font-family: "Inter", sans-serif;
+}
+
+/* 📱 Card */
+.completeCard {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 50px 24px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🔶 Icon */
+.iconWrapper {
+  margin-bottom: 24px;
+}
+
+.tick {
+  width: 72px;
+  height: 72px;
+  font-size: 36px;
+
+  background: linear-gradient(135deg, #ff7a00, #ffae42);
+  color: #000;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 25px rgba(255, 122, 0, 0.6);
+
+  animation: pop 0.4s ease, glow 1.5s infinite alternate;
+}
+
+/* ✨ Animations */
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px rgba(255,122,0,0.4); }
+  to { box-shadow: 0 0 30px rgba(255,122,0,0.9); }
+}
+
+/* 📝 Text */
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.primaryText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff8c00;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.secondaryText {
+  font-size: 13px;
+  color: #aaaaaa;
+  margin-bottom: 14px;
+}
+
+.footerText {
+  font-size: 11px;
+  color: #666666;
+}
+
+
+@media (max-width: 480px) {
+  .completeCard {
+    padding: 40px 20px;
+    border-radius: 18px;
+  }
+
+  .tick {
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .primaryText {
+    font-size: 15px;
+  }
+
+  .secondaryText {
+    font-size: 12px;
+  }
+}
+
+.completeWrapper {
+  padding: calc(16px + env(safe-area-inset-top))
+           calc(16px + env(safe-area-inset-right))
+           calc(16px + env(safe-area-inset-bottom))
+           calc(16px + env(safe-area-inset-left));
+}
+
+.loaderWrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #444;
+  border-top: 4px solid #ff9100;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+.primaryText1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a7a69d;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.waitingText {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,186 @@
+.summary-wrapper {
+  background: #111;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+/* MOBILE CONTAINER */
+.summary-container {
+  width: 390px;
+  background: linear-gradient(180deg, #140c08 0%, #0d0a09 100%);
+  border-radius: 28px;
+  padding: 24px 20px 28px;
+  color: #fff;
+  font-family:"Kanit", sans-serif;
+  /* box-shadow: 0 0 0 3px #7b6cff; */
+}
+
+/* HEADER */
+.summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.back-icon {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.summary-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* SUCCESS CIRCLE */
+.success-circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.inner-circle {
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle at center, #35d96c 0%, #1c7c3a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  font-weight: bold;
+  box-shadow: 0 0 40px rgba(52, 255, 117, 0.25);
+}
+
+/* TEXT */
+.charging-label {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin-bottom: 6px;
+}
+
+.session-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* STATS ROW */
+.stats-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  flex: 1;
+  background: linear-gradient(145deg, #3a2a1f, #2b1e15);
+  padding: 15px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.04);
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #c5bfbf;
+  margin-bottom: 6px;
+}
+
+.stat-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* AMOUNT CARD */
+.amount-card {
+  background: linear-gradient(145deg, #3c1f08, #2a1405);
+  border-radius: 22px;
+  padding: 22px 20px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 140, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;   /* 🔥 centers horizontally */
+  text-align: start;    /* ensures text inside is centered */
+}
+
+.amount-card p {
+  color: #ff8a00;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.amount-card h1 {
+  font-size: 32px;
+  font-weight: 800;
+  /* flex-direction: row; */
+  justify-content: start;
+}
+
+/* BREAKDOWN */
+.breakdown-card {
+  background: linear-gradient(145deg, #2e2118, #221710);
+  border-radius: 22px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.breakdown-card .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.breakdown-card .row:last-child {
+  border-bottom: none;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #ff8a00;
+  color: #ff8a00;
+  padding: 14px;
+  border-radius: 28px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.download-btn:hover {
+  background: rgba(255, 138, 0, 0.08);
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  width: 100%;
+  background: linear-gradient(180deg, #ff8a00 0%, #ff6a00 100%);
+  border: none;
+  padding: 15px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 106, 0, 0.35);
+}
